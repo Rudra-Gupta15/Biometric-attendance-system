@@ -271,6 +271,29 @@ app.get('/api/users/:id', (req, res) => {
   }
 });
 
+// 7. ATTENDANCE BY USER
+// GET /api/users/:id/attendance
+app.get('/api/users/:id/attendance', (req, res) => {
+  try {
+    const users = readUsers();
+    const user = users.find(u => u.id === req.params.id || u.employeeId === req.params.id);
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+
+    const attendance = readAttendance();
+    const userAttendance = attendance.filter(a => a.userId === user.id);
+    
+    res.json({ 
+      success: true, 
+      userId: user.id,
+      user: { id: user.id, name: user.name, employeeId: user.employeeId },
+      count: userAttendance.length, 
+      attendance: userAttendance 
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'Server error', error: err.message });
+  }
+});
+
 // 8. DELETE USER
 // DELETE /api/users/:id
 app.delete('/api/users/:id', (req, res) => {
