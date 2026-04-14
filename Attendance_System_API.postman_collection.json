@@ -1,0 +1,123 @@
+{
+  "info": {
+    "name": "Attendance System API",
+    "description": "Complete API collection for testing the attendance system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Register User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"1234567890\",\n  \"image\": \"sample-base64-image-data-here\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "register"]
+        },
+        "description": "Register a new user with name, email, phone, and image (base64)"
+      },
+      "response": []
+    },
+    {
+      "name": "2. Mark Attendance",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"john@example.com\",\n  \"image\": \"sample-base64-image-data-here\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/attendance",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "attendance"]
+        },
+        "description": "Mark attendance for a registered user. Image must match registration image."
+      },
+      "response": []
+    },
+    {
+      "name": "3. Get All Attendance Records",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/attendance",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "attendance"]
+        },
+        "description": "Retrieve all attendance records"
+      },
+      "response": []
+    },
+    {
+      "name": "4. Get All Users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "users"]
+        },
+        "description": "Get all registered users (without images)"
+      },
+      "response": []
+    },
+    {
+      "name": "5. Get Attendance by Date",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/attendance/date/Sat Jan 01 2024",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "attendance", "date", "Sat Jan 01 2024"]
+        },
+        "description": "Get attendance for a specific date. Format: 'Day Mon DD YYYY'"
+      },
+      "response": []
+    },
+    {
+      "name": "6. Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "health"]
+        },
+        "description": "Check if the API is running"
+      },
+      "response": []
+    }
+  ]
+}

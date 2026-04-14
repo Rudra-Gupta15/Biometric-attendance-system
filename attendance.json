@@ -1,0 +1,92 @@
+[
+  {
+    "id": "A-002",
+    "userId": "1776156924588",
+    "userName": "Sarah Connor",
+    "email": "sarah.connor@cyberdyne.com",
+    "department": "Security",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    "timestamp": "2026-04-14T09:00:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-003",
+    "userId": "1776156924589",
+    "userName": "James Smith",
+    "email": "james.smith@company.com",
+    "department": "Engineering",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
+    "timestamp": "2026-04-14T09:05:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-004",
+    "userId": "1776156924590",
+    "userName": "Elena Rodriguez",
+    "email": "elena.r@company.com",
+    "department": "Design",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena",
+    "timestamp": "2026-04-14T09:10:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-005",
+    "userId": "1776156924591",
+    "userName": "Michael Chen",
+    "email": "m.chen@company.com",
+    "department": "Marketing",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+    "timestamp": "2026-04-14T09:15:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-006",
+    "userId": "1776156924592",
+    "userName": "Aiswarya Roy",
+    "email": "aiswarya.roy@company.com",
+    "department": "Engineering",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Aiswarya",
+    "timestamp": "2026-04-14T09:20:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-007",
+    "userId": "1776156924593",
+    "userName": "David Miller",
+    "email": "d.miller@company.com",
+    "department": "Finance",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    "timestamp": "2026-04-14T09:25:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-008",
+    "userId": "1776156924594",
+    "userName": "Sophia Brown",
+    "email": "sophia.b@company.com",
+    "department": "HR",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophia",
+    "timestamp": "2026-04-14T09:30:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-009",
+    "userId": "1776156924595",
+    "userName": "Robert Wilson",
+    "email": "r.wilson@company.com",
+    "department": "Operations",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Robert",
+    "timestamp": "2026-04-14T09:35:00.000Z",
+    "date": "Tue Apr 14 2026"
+  },
+  {
+    "id": "A-010",
+    "userId": "1776156924596",
+    "userName": "Linda Zhang",
+    "email": "linda.z@company.com",
+    "department": "Quality Assurance",
+    "loginPhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Linda",
+    "timestamp": "2026-04-14T09:40:00.000Z",
+    "date": "Tue Apr 14 2026"
+  }
+]
